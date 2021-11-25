@@ -17,7 +17,7 @@ header {
 header p {
 	text-align:right;
 	padding: 500px 50px;
-    font-size: 24px;
+    font-size: 1rem;
 	color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -32,6 +32,7 @@ header p {
 	text-align: center;
 	font-family: 'Anton', sans-serif;
 }
+
 
 
 
@@ -110,7 +111,7 @@ header p {
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background: #e0e0e0;
+	background: #ffffff;
 	color: #1d1d1d;
 }
 
@@ -125,8 +126,15 @@ body {
 	gap: 40px;
 }
 
+
 .contenedor .pelicula {
 	text-align: center;
+	
+	
+	transition-duration: 0.5s;
+}
+.pelicula:hover {
+	-webkit-transform:scale(1);transform:scale(1.03);
 }
 
 .contenedor .pelicula .titulo {
@@ -139,16 +147,31 @@ body {
 	margin-bottom: 15px;
 	border-radius: 15px;
 }
+.titulo {
+	color:rgb(255, 255, 255);
+	background-color: #008cff;
+	border-radius: 5px;
+	padding: 10px 10px;
+	font-size: 25px;
+}
+
+.valoracion {
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(0, 0, 0);
+	padding: 10px 10px;
+}
+
 /* ESTILOS DE TARJETAS */
 
-.pelicula {
+/*.pelicula {
 	transition-duration: 0.5s;
 	overflow:hidden;
 }
 .pelicula:hover {
 	filter: saturate(130%);
 	-webkit-transform:scale(1);transform:scale(1.03);
-}
+}*/
 
 
 .paginacion {
@@ -186,6 +209,16 @@ body {
 }
 
 @media screen and (max-width:1024px){
+	header p {
+		text-align:right;
+		padding: 300px 70px;
+		font-size: 1rem;
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+		margin: 5px 5px;
+		width: 5%;
+	}
 	.menu_btn {
 		display: block;
 	}
@@ -213,6 +246,24 @@ body {
 
 }
 @media screen and (max-width:736px){
+	.contenedor {
+		width: 90%;
+		max-width: 1000px;
+		margin: 40px auto 100px auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+	header p {
+		text-align:right;
+		padding: 300px 70px;
+		font-size: 1rem;
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+		margin: 5px 5px;
+		width: 5%;
+	}
 	.menu_btn {
 		display: block;
 	}
