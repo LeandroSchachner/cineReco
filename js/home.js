@@ -18,7 +18,7 @@ btnAnterior.addEventListener("click", () => {
 const cargarPeliculas = async () => {
 
     try {
-        const  respuesta = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=b8f62f889387d08df32348acc7386c2a&language=es-MX&page=${pagina}`);
+        const  respuesta = await fetch(`https://api.themoviedb.org/3/movie/latest?api_key=b8f62f889387d08df32348acc7386c2a&language=es-MX&page=${pagina}`);
     
         console.log(respuesta);
 
