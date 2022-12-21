@@ -31,15 +31,10 @@ const cargarPeliculas = async () => {
             datos.results.forEach(pelicula => {
                 peliculas +=`
                     <div class="pelicula">
-                            
-                            <img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
-                            <div class="capa">
-                            
-                            
-                        </div>
+                        <img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
+                    
                         
-                    <h2 class="titulo">${pelicula.title}</h2>
-                    <h3 class="valoracion">Valoracion ${pelicula.vote_average}</h3>
+                    <h3 class="titulo">${pelicula.title}</h3>
                     
                     </div>
                 `;
