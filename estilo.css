@@ -186,9 +186,7 @@ body {
 .paginacion button:hover {
   background: #003b6b;
 }
-.scroll {
-  height: 100px;
-}
+
 
 @media screen and (max-width: 1024px) {
   .menu_btn {
