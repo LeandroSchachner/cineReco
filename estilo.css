@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,7 @@
 
 header {
   width: 100%;
-  height: 80vh;
+  height: 15vh;
   background-image: url(./img/ticket-gfb85b4e41_1920.jpg);
   background-size: cover;
   background-position: center;
@@ -53,7 +58,7 @@ header {
   color: #fff;
 }
 .nav.active a:hover {
-  color: tomato;
+  color: rgb(0, 0, 0);
 }
 .logo {
   font-size: 55px;
@@ -62,24 +67,27 @@ header {
   font-family: "Monoton", cursive;
 }
 .menu {
-  display: flex;
+  display: inline-flex;
+  
 }
 .menu li {
+  font-family: 'Roboto Mono', monospace;
   list-style: none;
-  margin: 25px;
-  font-size: 25px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 1.2rem;
 }
 .menu li a {
-  color: #fff;
+  color: #fafafa;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.5s ease;
 }
 .menu li a:hover {
-  padding: 5px 15px;
-  background: #fff;
-  color: #000;
-  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  padding: 1px;
+  background-color: #fafafa;
+  
 }
 
 .menu_btn {
@@ -198,7 +206,8 @@ body {
     left: 0;
     width: 300px;
     height: 100vh;
-    background: #000;
+    background: #100f0f;
+    opacity: 0.9;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,7 +218,10 @@ body {
   .menu li {
     margin: 15px 0;
   }
-
+  .menu li:hover {
+    color: #100f0f;
+    background-color: #fff;
+  }
   .menu.active {
     transform: translatex(0);
   }
@@ -232,7 +244,7 @@ body {
     left: 0;
     width: 240px;
     height: 100vh;
-    background: #000;
+    background: #100f0f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -243,7 +255,9 @@ body {
   .menu li {
     margin: 10px 0;
   }
-
+  .logo {
+    font-size: 25px;
+  }
   .menu.active {
     transform: translatex(0);
   }
